@@ -4,8 +4,9 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Sky
   m_Shader: {fileID: 4800000, guid: 53d6c6243ec657e4081a9f4948adc214, type: 3}
   m_ShaderKeywords: 
@@ -73,6 +74,6 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorGround: {r: 0.9485294, g: 0.79788053, b: 0.57190746, a: 1}
-    - _ColorSky: {r: 0.875, g: 0.6789681, b: 0.5726103, a: 1}
+    - _ColorGround: {r: 0.67768776, g: 0.9150943, b: 0.868293, a: 1}
+    - _ColorSky: {r: 0.6537469, g: 0.7830189, b: 0.7464855, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
