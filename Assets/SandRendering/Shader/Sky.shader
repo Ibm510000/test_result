@@ -5,6 +5,7 @@
 //		_MainTex ("Texture", 2D) = "white" {}
 		_ColorGround( "Ground Color" , color) = (1,1,1,1)
 		_ColorSky( "Sky Color" , color ) = (1,1,1,1)
+		_ColorHeight( "height Color" , color ) = (1,1,1,1)
 	}
 	SubShader
 	{
@@ -43,6 +44,7 @@
 //			float4 _MainTex_ST;
 			float4 _ColorGround;
 			float4 _ColorSky;
+			float4 _ColorHeight;
 
 			
 			v2f vert (appdata v)
@@ -58,7 +60,15 @@
 			
 			fixed4 frag (v2f i) : SV_Target
 			{
-				fixed4 col = lerp( _ColorGround , _ColorSky , saturate( i.worldPos.y / 50 ));
+				fixed4 col = (1,1,1,1);
+				if(i.worldPos.y<100){
+					col = lerp( _ColorGround , _ColorSky , saturate( i.worldPos.y / 50 ));
+				}
+				else{
+					col = lerp( _ColorSky , _ColorHeight , saturate( (i.worldPos.y-100) / 100 ));
+					//col = ;
+				}
+				
 				// sample the texture
 //				fixed4 col = tex2D(_MainTex, i.uv);
 				// apply fog

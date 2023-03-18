@@ -524,7 +524,8 @@ Shader "Sand/SandRenderingShader"
 				if ( _IsSpecular )
 					return specularColor;
 
-				specularColor = saturate( max( _OceanSpecularMutiplyer * oceanSpecularColor , _SpecularMutiplyer * specularColor ));
+				//specularColor = saturate( max( _OceanSpecularMutiplyer * oceanSpecularColor , _SpecularMutiplyer * specularColor ));
+				specularColor = saturate(_SpecularMutiplyer * specularColor);
 
 //				return specularColor;
 
