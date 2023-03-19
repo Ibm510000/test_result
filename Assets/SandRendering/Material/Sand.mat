@@ -2,14 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Sand
   m_Shader: {fileID: 4800000, guid: d9f446591c0101d4e8281b97d5caf1bf, type: 3}
-  m_ShaderKeywords: 
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -75,11 +76,12 @@ Material:
         m_Texture: {fileID: 2800000, guid: 66e21e8b2000a3f4f8bee4e08472cd0a, type: 3}
         m_Scale: {x: 12, y: 12}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _BumpScale: 0.4
     - _DetailBumpScale: 0.46
-    - _GlitterMutiplyer: 100
-    - _GlitterRange: 2
+    - _GlitterMutiplyer: 20
+    - _GlitterRange: 200
     - _GlitterShiness: 1
     - _Glitterness: 6
     - _Glossiness: 4
@@ -108,6 +110,7 @@ Material:
     - _SteepBumpScale: 0.08
     - _SurfaceNormalScale: 0.1
     m_Colors:
-    - _GlitterColor: {r: 1, g: 0.91015273, b: 0.6462264, a: 1}
+    - _GlitterColor: {r: 0.9150943, g: 0.8411865, b: 0.62588996, a: 1}
     - _OceanSpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecularColor: {r: 0.8490566, g: 0.8450516, b: 0.73291206, a: 1}
+  m_BuildTextureStacks: []

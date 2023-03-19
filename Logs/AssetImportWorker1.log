@@ -2075,3 +2075,49 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 616.672637 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/AmbientOcclusion.cginc
+  artifactKey: Guid(447591ee3d9d4204899be5fe25968ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/AmbientOcclusion.cginc using Guid(447591ee3d9d4204899be5fe25968ea0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '636fa015f56bc0d257e9c9970d5d3c8a') in 0.034890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/DepthOfField.cginc
+  artifactKey: Guid(ddc2c19b8a216d748a357ffe32ba4dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/DepthOfField.cginc using Guid(ddc2c19b8a216d748a357ffe32ba4dc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d06d1f1cf85ea5fcc8cf532a157bbe') in 0.009825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/TAA.cginc
+  artifactKey: Guid(241b7a6a033e9dc4da9d2595cef7f477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/TAA.cginc using Guid(241b7a6a033e9dc4da9d2595cef7f477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eae14e954aea296eab3e08e1f85a4fa') in 0.009080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/FXAA3.cginc
+  artifactKey: Guid(613b4036a9f55c34fb054bde02455e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/FXAA3.cginc using Guid(613b4036a9f55c34fb054bde02455e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c24443efaf733630c09807bb3d6ac1') in 0.008612 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/Tonemapping.cginc
+  artifactKey: Guid(0a999e641c982a14d9c68dfd53a98afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/Tonemapping.cginc using Guid(0a999e641c982a14d9c68dfd53a98afc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c019ec09478df506ce3de8c04d826309') in 0.012161 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/ScreenSpaceRaytrace.cginc
+  artifactKey: Guid(a92d6fdbe2c35f94190497c18b88f9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/ScreenSpaceRaytrace.cginc using Guid(a92d6fdbe2c35f94190497c18b88f9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32225298f7233ea0c34f974a9f53fa74') in 0.009441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/ColorGrading.cginc
+  artifactKey: Guid(26a62c2e30be83547bdfa9fe837165e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/ColorGrading.cginc using Guid(26a62c2e30be83547bdfa9fe837165e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf90b553c06e2da4ea32edfcff7dee1') in 0.009453 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

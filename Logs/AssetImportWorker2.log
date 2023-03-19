@@ -664,3 +664,79 @@ Received Import Request.
   path: Assets/PostProcessing/Editor/PostProcessingModelEditor.cs
   artifactKey: Guid(afe296d4ede60a0479734dc8c7df82c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/PostProcessing/Editor/PostProcessingModelEditor.cs using Guid(afe296d4ede60a0479734dc8c7df82c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efdea2553eda2f3fab7a09c3d163d2c') in 0.004841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 185.007716 seconds.
+  path: Assets/PostProcessing/Resources
+  artifactKey: Guid(52380717b4884c04ebc31c46dda84909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources using Guid(52380717b4884c04ebc31c46dda84909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62fc33ce90604e0fef3561c974102489') in 0.005261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.938577 seconds.
+  path: Assets/PostProcessing/Resources/Shaders
+  artifactKey: Guid(e039bcc30d13c9341aa224f4e89f21b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders using Guid(e039bcc30d13c9341aa224f4e89f21b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edfe8537bfd0937759a601b674f70c53') in 0.005256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.039421 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/ACES.cginc
+  artifactKey: Guid(b8d56fc3449f426408c23c723b58d7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/ACES.cginc using Guid(b8d56fc3449f426408c23c723b58d7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde32ed3bddda217395e0eb64f433371') in 0.025316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/UberSecondPass.cginc
+  artifactKey: Guid(b6e42614562a56445ba4b5d90301f06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/UberSecondPass.cginc using Guid(b6e42614562a56445ba4b5d90301f06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b934dfb2ceb0c00a6b67a5c99b00a33') in 0.008884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/Common.cginc
+  artifactKey: Guid(eb88496804341c648b32a75843d92ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/Common.cginc using Guid(eb88496804341c648b32a75843d92ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1badf67122caeb944c65c6775bbad0f3') in 0.010681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/Bloom.cginc
+  artifactKey: Guid(7d1f4dd94c8e6e940b0730076ea7d6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/Bloom.cginc using Guid(7d1f4dd94c8e6e940b0730076ea7d6d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0583a4ad68833625197f303aa30c5525') in 0.009636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/EyeHistogram.compute
+  artifactKey: Guid(e213272ad8ff213409a6e13b5c26b4e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/EyeHistogram.compute using Guid(e213272ad8ff213409a6e13b5c26b4e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '678b557cb9e1d3e07da85d8710161a65') in 0.006973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/DiskKernels.cginc
+  artifactKey: Guid(faeb738b5a2c3ff43bd104dd5b1a275c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/DiskKernels.cginc using Guid(faeb738b5a2c3ff43bd104dd5b1a275c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64cb5f64f19ea7fb255d36d2b0b5c542') in 0.009655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/MotionBlur.cginc
+  artifactKey: Guid(c83956915580e42489479d2a109470ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/MotionBlur.cginc using Guid(c83956915580e42489479d2a109470ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262fd24a1a3ea019a126f4ad0878aa19') in 0.009710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/EyeAdaptation.cginc
+  artifactKey: Guid(d2f406cad28afda489b94594fb3ce0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/EyeAdaptation.cginc using Guid(d2f406cad28afda489b94594fb3ce0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3091c1303cbec46888613950f7ca5584') in 0.009813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.890199 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/AmbientOcclusion.shader
+  artifactKey: Guid(e881ae5627d1cc84395303acfbca6fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/AmbientOcclusion.shader using Guid(e881ae5627d1cc84395303acfbca6fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58be4e09dbdf6177d7785b9f0e0c6c1') in 0.003016 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.956941 seconds.
+  path: Assets/PostProcessing/Resources/Shaders/Blit.shader
+  artifactKey: Guid(7d89469544dfa214eabdbf37fca76f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PostProcessing/Resources/Shaders/Blit.shader using Guid(7d89469544dfa214eabdbf37fca76f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcbf11e9194716fc090e4a4df86c30ff') in 0.005313 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
