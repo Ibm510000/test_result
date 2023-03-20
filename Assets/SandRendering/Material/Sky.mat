@@ -78,6 +78,6 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorGround: {r: 0.8584906, g: 0.770878, b: 0.4818886, a: 1}
     - _ColorHeight: {r: 0.49381453, g: 0.5497462, b: 0.764151, a: 1}
-    - _ColorSky: {r: 0.70825917, g: 0.8679245, b: 0.8195411, a: 1}
+    - _ColorSky: {r: 0.6534799, g: 0.8396226, b: 0.78251064, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

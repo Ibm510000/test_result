@@ -46,6 +46,26 @@
 			float4 _ColorSky;
 			float4 _ColorHeight;
 
+			float n3D(in float3 p){
+    
+				const float3 s = float3(113, 157, 1);
+				float3 ip = floor(p); p -= ip; 
+				float4 h = float4(0., s.yz, s.y + s.z) + dot(ip, s);
+				p = p*p*(3. - 2.*p); //p *= p*p*(p*(p * 6. - 15.) + 10.);
+				h = lerp(frac(sin(h)*43758.5453), frac(sin(h + s.x)*43758.5453), p.x);
+				h.xy = lerp(h.xz, h.yw, p.y);
+				return lerp(h.x, h.y, p.z); // Range: [0, 1].
+			}
+
+
+			// 3D noise fBm.
+			float fBm(in float3 p){
+    
+				return n3D(p)*0.57 + n3D(p*2.0)*0.28 + n3D(p*4.0)*0.15;
+    
+			}
+
+
 			
 			v2f vert (appdata v)
 			{
@@ -69,6 +89,9 @@
 					//col = ;
 				}
 				
+
+
+
 				// sample the texture
 //				fixed4 col = tex2D(_MainTex, i.uv);
 				// apply fog

@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6245012161848311023
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ff192e4e325ac3418db0ce6c8b3158b, type: 3}
+  m_Name: Grayscale
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  blend:
+    overrideState: 0
+    value: 0.5
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,6 +34,7 @@ MonoBehaviour:
   settings:
   - {fileID: 3170290850453912255}
   - {fileID: 8652938815726216035}
+  - {fileID: -6245012161848311023}
 --- !u!114 &3170290850453912255
 MonoBehaviour:
   m_ObjectHideFlags: 3

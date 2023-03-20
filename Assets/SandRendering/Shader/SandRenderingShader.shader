@@ -18,6 +18,8 @@ Shader "Sand/SandRenderingShader"
 		_DetailBumpMap( "Detail Bump Map " , 2D ) = "white" {}
 		_DetailBumpScale("Detail Bump Scale " ,range(0,2) ) = 1
 
+		_Flow_movingMap("flow Map",2D ) = "white" {}
+
 		[Space(10)]
 		[Header(Specular)]
 		[Header(OceanSpecular)]
@@ -129,6 +131,9 @@ Shader "Sand/SandRenderingShader"
 			float _IsGlitterBase;
 			float _IsGlitterNoise;
 
+			sampler2D _Flow_movingMap;
+			float4 _Flow_movingMap_ST;
+
 			struct appdata
 			{
 				float4 vertex : POSITION;
@@ -194,10 +199,51 @@ Shader "Sand/SandRenderingShader"
 
 				return normalize( lerp( shallow , steep , steepness ) );
 			}
+			//-----------------------------------------------------------------------------start1
+			float4 Noise( in float2 x )
+			{
+				float2 p = floor(x);
+				float2 f = frac(x);
+				f = f*f*(3.0-2.0*f);
+			//	vec2 f2 = f*f; f = f*f2*(10.0-15.0*f+6.0*f2);
+
+				float2 uv = p + f;
+				//float3 shallowX = UnpackNormal( tex2D( _NormalMapShallowX , _NormalMapShallowX_ST.xy * uv.xy + _NormalMapShallowX_ST.zw ) ) ;
+				float4 rg = tex2Dlod( _Flow_movingMap, float4(_Flow_movingMap_ST*uv.xy + _Flow_movingMap_ST.zw,0,0) );
+					  
+
+				return rg;
+			}
+
+			float RippleHeight( float2 pos )
+			{
+				float2 p = pos+float2(-1,.2)*_Time;
+	
+				p += float2(1,0)*Noise(p).y; // more natural looking ripples
+				float f = Noise(p).x-.5;
+				p *= 2.0;
+				p += float2(0,-.5)*_Time;
+				f += (Noise(p).x-.5)*.2;
+				p *= 2.0;
+				p += float2(-3,0)*_Time;
+				f += (Noise(p).x-.5)*.05;
+	
+				f = f*(1.0-exp2(-abs(pos.x)));
+				return f*1.0;
+			}
+
+			float DistanceField( float3 pos )
+			{
+				return (RippleHeight(pos.xy)-pos.z)*.5;
+			}
+
+			////-----------------------------------------------------------------------------end1
+			
 			
 			v2f vert (appdata v)
 			{
 				v2f o;
+				//float4 new_pos = DistanceField(v.vertex);
 				o.vertex = UnityObjectToClipPos(v.vertex);
 //				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 				o.uv = v.uv; // here we don't want the main texture to affect the uv
@@ -422,6 +468,9 @@ Shader "Sand/SandRenderingShader"
 			    return saturate( cos_theta_i ) *
 			        (A + (B * saturate( cos_phi_diff ) * sin(alpha) * tan(beta)));
 			}
+
+
+			
 			
 			fixed4 frag (v2f i) : SV_Target
 			{
