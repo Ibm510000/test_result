@@ -133,9 +133,10 @@ Shader "Hidden/Custom/Grayscale"
             
 
             float dust = getMist(rd)*(-rd.y+1.0);
-            float3 dust_color =float3( 0.9,0.6,0.1);
+            //float3 dust_color =float3( 0.9,0.6,0.1);
+            float3 dust_color =float3( 0.8,0.5,0.1);
 
-            color.rgb = color.rgb* 0.75 + (color.rgb + 0.25 * float3(1.2, 1, 0.9)) * dust_color * dust * 1;
+            color.rgb = color.rgb* 0.75 + (color.rgb + 0.25 * float3(1.2, 1, 0.9)) * dust_color * dust * 4;
 
             //float luminance = dot(color.rgb, float3(0.2126729, 0.7151522, 0.0721750));
             //color.rgb = lerp(color.rgb, luminance.xxx, _Blend.xxx);

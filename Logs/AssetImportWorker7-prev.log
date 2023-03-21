@@ -1,0 +1,501 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'zh' Physical Memory: 16061 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker7
+-projectPath
+D:/mihoyo_test/test_result
+-logFile
+Logs/AssetImportWorker7.log
+-srvPort
+63953
+Successfully changed project path to: D:/mihoyo_test/test_result
+D:/mihoyo_test/test_result
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 46.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.8f1 (b30333d56e81)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/mihoyo_test/test_result/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x24dd)
+    Vendor:   NVIDIA
+    VRAM:     8033 MB
+    Driver:   31.0.15.2849
+Shader 'Sand/Sky': fallback shader 'Transparent' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56568
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.006165 seconds.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 43.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.567 seconds
+Domain Reload Profiling:
+	ReloadAssembly (567ms)
+		BeginReloadAssembly (76ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (382ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (114ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (200ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (43ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (44ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (77ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001330 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.846 seconds
+Domain Reload Profiling:
+	ReloadAssembly (847ms)
+		BeginReloadAssembly (186ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (121ms)
+		EndReloadAssembly (577ms)
+			LoadAssemblies (50ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (153ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (290ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Sand/Sky': fallback shader 'Transparent' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1970 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (1.6 MB). Loaded Objects now: 2438.
+Memory consumption went from 113.4 MB to 111.8 MB.
+Total: 2.377200 ms (FindLiveObjects: 0.160800 ms CreateObjectMapping: 0.034300 ms MarkObjects: 1.938100 ms  DeleteObjects: 0.243000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001767 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.859 seconds
+Domain Reload Profiling:
+	ReloadAssembly (860ms)
+		BeginReloadAssembly (117ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (646ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (195ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (305ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Shader 'Sand/Sky': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 7.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1912 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (1.5 MB). Loaded Objects now: 2441.
+Memory consumption went from 108.1 MB to 106.5 MB.
+Total: 7.035800 ms (FindLiveObjects: 0.217700 ms CreateObjectMapping: 0.083200 ms MarkObjects: 6.110800 ms  DeleteObjects: 0.622300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 249352.939580 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_crk_m_2C_02.fbx
+  artifactKey: Guid(20342e682c53fbd4299aa2a9bea2d701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_crk_m_2C_02.fbx using Guid(20342e682c53fbd4299aa2a9bea2d701) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd43340e33ca6c67e816d2c50177aa259') in 0.115719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_12.fbx
+  artifactKey: Guid(e0748a907f6a4ea46b6b5b645b8fcb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_12.fbx using Guid(e0748a907f6a4ea46b6b5b645b8fcb20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c72a19ea1c9289b4cd5ba5f5f13c3f5') in 0.049552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_l_2C_04.fbx
+  artifactKey: Guid(0f4b452b7f1cea645af6f4f4cc48935e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_l_2C_04.fbx using Guid(0f4b452b7f1cea645af6f4f4cc48935e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efecac392f253287d2b48e130338afa7') in 0.034191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_s_2C_03.fbx
+  artifactKey: Guid(2a617766fb414da49b4c72df04603486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_s_2C_03.fbx using Guid(2a617766fb414da49b4c72df04603486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf1af55cd0337c32a730cb16e6298d22') in 0.018831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_13.fbx
+  artifactKey: Guid(693df9cb009c9f34088a4a82bbfbf970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_13.fbx using Guid(693df9cb009c9f34088a4a82bbfbf970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b475d1389170477ce45942aae4171f') in 0.023196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_04.fbx
+  artifactKey: Guid(01855e6b5d6811c4c95dd3abe792757b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_04.fbx using Guid(01855e6b5d6811c4c95dd3abe792757b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640bd24d16647c8d1b4fb74124081189') in 0.026698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008017 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_crk_s_2C_01.fbx
+  artifactKey: Guid(5edd23f51ac753b4e940cbc75eee62bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_crk_s_2C_01.fbx using Guid(5edd23f51ac753b4e940cbc75eee62bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9efb344273233d97dbef95b9403bdb2a') in 0.028258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_s_2C_04.fbx
+  artifactKey: Guid(463cf46d39ae6624c9cd6a48372b419a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_s_2C_04.fbx using Guid(463cf46d39ae6624c9cd6a48372b419a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e4b80ca8efbc6ed75b6ac06834dc449') in 0.016598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_08.fbx
+  artifactKey: Guid(902813f7e7b91224ebe79ccce1c6302a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_08.fbx using Guid(902813f7e7b91224ebe79ccce1c6302a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93a4d488535ffc1add4e05872d6c75b3') in 0.016388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_11.fbx
+  artifactKey: Guid(f0b592cdd464168408e39e2354458da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_11.fbx using Guid(f0b592cdd464168408e39e2354458da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9bcb9b438e41f512bddb6c1b05a19d0') in 0.015893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_07.fbx
+  artifactKey: Guid(3da89decf4573aa49b849b8811db9108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_07.fbx using Guid(3da89decf4573aa49b849b8811db9108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359318b2635e9979df50f208283c1934') in 0.019199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_03.fbx
+  artifactKey: Guid(7d20138d9f16bc7418f13e80dd715d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_03.fbx using Guid(7d20138d9f16bc7418f13e80dd715d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a9fd830666899182a406d8d3a79447f') in 0.018043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_s_2C_03.fbx
+  artifactKey: Guid(420a9ff117ddf6d41a462c4c61e55c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_s_2C_03.fbx using Guid(420a9ff117ddf6d41a462c4c61e55c62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdae2627a59aab4b013467513774c41b') in 0.016278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_crk_m_2C_03.fbx
+  artifactKey: Guid(477084236066cd048984cb080b51b4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_crk_m_2C_03.fbx using Guid(477084236066cd048984cb080b51b4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '681b4beac40d8be9ddbf3052beb3fe9a') in 0.018090 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_13.fbx
+  artifactKey: Guid(ec5e97262e4825e46806c389216b3769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_13.fbx using Guid(ec5e97262e4825e46806c389216b3769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1080fcb72c245d6e63673fbbd59c7e00') in 0.020522 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_s_2C_10.fbx
+  artifactKey: Guid(79f319ef670e756479a38f95cb8ad425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_s_2C_10.fbx using Guid(79f319ef670e756479a38f95cb8ad425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b51d0a49e364c6d1626d560865333da7') in 0.017829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_crk_s_2C_02.fbx
+  artifactKey: Guid(d1e9bc85a6df366438817e26a94059db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_crk_s_2C_02.fbx using Guid(d1e9bc85a6df366438817e26a94059db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a84d834c950839e7eb191bc720f6ef29') in 0.017299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_l_2C_01.fbx
+  artifactKey: Guid(2a5af4beb6df4f047a4ed35ec8f6915d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_l_2C_01.fbx using Guid(2a5af4beb6df4f047a4ed35ec8f6915d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e45afd8d5d08f6bf9334767289e35699') in 0.019471 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_04.fbx
+  artifactKey: Guid(4794dccd3821a7141a1ab932f5409950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_04.fbx using Guid(4794dccd3821a7141a1ab932f5409950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0def75c8fab2e39921fa112770a9d64b') in 0.020891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_05.fbx
+  artifactKey: Guid(7a8b391eff855b446b2d82d451f8aca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_05.fbx using Guid(7a8b391eff855b446b2d82d451f8aca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1389464a5f2852a8174010183eec2c5') in 0.016182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_07.fbx
+  artifactKey: Guid(1c7c4b7e9b6eece4eb58022505c7c80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_07.fbx using Guid(1c7c4b7e9b6eece4eb58022505c7c80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5118c74ed413a20b153fc3220913f8d9') in 0.016815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_s_2C_06.fbx
+  artifactKey: Guid(92591015837090a409f47448f55ac722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_s_2C_06.fbx using Guid(92591015837090a409f47448f55ac722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ea17c2d1ae348526a8852cdc476cb90') in 0.016650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_10.fbx
+  artifactKey: Guid(4c419c1c1c837c74993f40367325144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_10.fbx using Guid(4c419c1c1c837c74993f40367325144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a1c5ec3a120a4429bb4f2231a23207') in 0.018291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_s_2C_02.fbx
+  artifactKey: Guid(dc1da1938b8a96d4abbc8342f908475d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_s_2C_02.fbx using Guid(dc1da1938b8a96d4abbc8342f908475d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aeecac4232af3fbee8e0732f0b279d7') in 0.018518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_20.fbx
+  artifactKey: Guid(09de9a7f3a6fcf44b9822454bde5abc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_20.fbx using Guid(09de9a7f3a6fcf44b9822454bde5abc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5895344ec98a226cf63e3e6e88605aaf') in 0.018367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_03.fbx
+  artifactKey: Guid(e2496d40e03bead439e90dbf0ee57a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_03.fbx using Guid(e2496d40e03bead439e90dbf0ee57a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97330d720974f9d961e075ee0843d918') in 0.018801 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_s_2C_01.fbx
+  artifactKey: Guid(29c61c6996b7b6745b121f3ce4c1d98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_s_2C_01.fbx using Guid(29c61c6996b7b6745b121f3ce4c1d98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243a174e9db317335056e58f9613e062') in 0.018947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_crk_s_2C_05.fbx
+  artifactKey: Guid(fc9a90fa155d8cc4093d5f8095b2b937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_crk_s_2C_05.fbx using Guid(fc9a90fa155d8cc4093d5f8095b2b937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a234619f2f9108094d1d576d26671d47') in 0.017700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_18.fbx
+  artifactKey: Guid(d99786e4bf5a4244590f6a30da851277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_18.fbx using Guid(d99786e4bf5a4244590f6a30da851277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d134871e4c7a257f711ee739ae110b8') in 0.020424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_s_2C_01.fbx
+  artifactKey: Guid(0df009e0769a2dd40aaa5ba266136771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_s_2C_01.fbx using Guid(0df009e0769a2dd40aaa5ba266136771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97742d1ae8a3cb1fe8513f002f8a062c') in 0.017234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_s_2C_09.fbx
+  artifactKey: Guid(a67db5ad6d3139246994a2ccbbbee6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_s_2C_09.fbx using Guid(a67db5ad6d3139246994a2ccbbbee6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6634dec0dbb064df2fe79d07b3626334') in 0.019371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_14.fbx
+  artifactKey: Guid(b1e1c46659400864d82cc7babf753fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_14.fbx using Guid(b1e1c46659400864d82cc7babf753fb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '219bd9136ce5aa4aec623b1d6db5004c') in 0.017368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_01.fbx
+  artifactKey: Guid(fb9febad167965b4597a27e0984cf03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_m_2C_01.fbx using Guid(fb9febad167965b4597a27e0984cf03a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09af96839706d2ae00101398d084ac41') in 0.017644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_m_2C_02.fbx
+  artifactKey: Guid(cf83331556ac2df4aaefe9ce893d9924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rocks_Square_m_2C_02.fbx using Guid(cf83331556ac2df4aaefe9ce893d9924) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd147c1903beb4632a3288b397ee6dafd') in 0.015262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_01.fbx
+  artifactKey: Guid(51e3c8bd9c0976a4c926de9af38f038e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Rocks/Rock Assets/Meshes/2 Color/Square_Rocks/Rock_Square_l_2C_01.fbx using Guid(51e3c8bd9c0976a4c926de9af38f038e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a435a9c4bdf98ccb236925186a083d') in 0.018010 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001210 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.813 seconds
+Domain Reload Profiling:
+	ReloadAssembly (814ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (615ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (161ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (314ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (20ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (206ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Shader 'Sand/Sky': fallback shader 'Transparent' not found
+Refreshing native plugins compatible for Editor in 2.15 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1912 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 28 unused Assets / (1.5 MB). Loaded Objects now: 2455.
+Memory consumption went from 112.2 MB to 110.7 MB.
+Total: 5.744700 ms (FindLiveObjects: 0.243800 ms CreateObjectMapping: 0.066300 ms MarkObjects: 4.937200 ms  DeleteObjects: 0.495800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

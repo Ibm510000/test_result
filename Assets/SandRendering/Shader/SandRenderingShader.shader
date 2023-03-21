@@ -200,6 +200,7 @@ Shader "Sand/SandRenderingShader"
 				return normalize( lerp( shallow , steep , steepness ) );
 			}
 			//-----------------------------------------------------------------------------start1
+			/*
 			float4 Noise( in float2 x )
 			{
 				float2 p = floor(x);
@@ -208,7 +209,7 @@ Shader "Sand/SandRenderingShader"
 			//	vec2 f2 = f*f; f = f*f2*(10.0-15.0*f+6.0*f2);
 
 				float2 uv = p + f;
-				//float3 shallowX = UnpackNormal( tex2D( _NormalMapShallowX , _NormalMapShallowX_ST.xy * uv.xy + _NormalMapShallowX_ST.zw ) ) ;
+
 				float4 rg = tex2Dlod( _Flow_movingMap, float4(_Flow_movingMap_ST*uv.xy + _Flow_movingMap_ST.zw,0,0) );
 					  
 
@@ -217,16 +218,16 @@ Shader "Sand/SandRenderingShader"
 
 			float RippleHeight( float2 pos )
 			{
-				float2 p = pos+float2(-1,.2)*_Time;
+				float2 p = pos+float2(-1,.2)*_Time*0.1;
 	
 				p += float2(1,0)*Noise(p).y; // more natural looking ripples
-				float f = Noise(p).x-.5;
+				float f = Noise(p).x-0.5;
 				p *= 2.0;
-				p += float2(0,-.5)*_Time;
-				f += (Noise(p).x-.5)*.2;
+				p += float2(0,-.5)*_Time*0.1;
+				f += (Noise(p).x-0.5)*0.2;
 				p *= 2.0;
-				p += float2(-3,0)*_Time;
-				f += (Noise(p).x-.5)*.05;
+				p += float2(-3,0)*_Time*0.1;
+				f += (Noise(p).x-0.5)*0.05;
 	
 				f = f*(1.0-exp2(-abs(pos.x)));
 				return f*1.0;
@@ -236,20 +237,98 @@ Shader "Sand/SandRenderingShader"
 			{
 				return (RippleHeight(pos.xy)-pos.z)*.5;
 			}
-
+			*/
 			////-----------------------------------------------------------------------------end1
-			
+			float2 direction[2] = {
+					float2(-0.42262,-0.90631),
+					float2(0.5,0.86603),
+			};
+
+			float amplitude[2] = {
+				   0.12,
+				   0.14,
+			};
+
+			float speed[2] = {
+				   0.025,
+				   0.0075,
+			};
+
+			float wavelength[2] = {
+				  7,
+				  5,
+			};
+
+
+
+			float wave(int i, float x, float z) {
+				float frequency = 2.0 * 3.1415/7.0;
+				float phase = speed[i] * frequency;
+				float theta = dot(direction[i], float2(x, z));
+				//float theta = 1;
+				return amplitude[0] * sin(theta * frequency + _Time*100.0);
+			}
+
+			float waveHeight(float x, float z) {
+				float height = 0.0;
+				/*
+				for (int i = 0; i < 5; ++i){
+					height += wave(i, x, z);
+				
+				}*/
+				//8*smoothstep(0,2,sin(x+7))
+				x = x + _Time*2;
+				height+= 0.01 * sin(dot(float2(-0.5,0.8), float2(x, z)) * 20 * 3.1415);
+				height+= 0.01 * sin(dot(float2(0.5,0.8), float2(x, z)) * 20 * 3.1415) ;
+
+
+
+				return height;
+			}
+			/*
+			float dWavedx(int i, float x, float z) {
+				float frequency = 2*3.1415/wavelength[i];
+				float phase = speed[i] * frequency;
+				float theta = dot(direction[i], float2(x, z));
+
+
+				float A = amplitude[i] * direction[i].x * frequency;
+				return A * cos(theta * frequency + _Time * phase);
+			}
+
+			float dWavedz(int i, float x, float z) {
+				float frequency = 2*3.1415/wavelength[i];
+				float phase = speed[i] * frequency;
+				float theta = dot(direction[i], float2(x, z));
+
+				float A = amplitude[i] * direction[i].y * frequency;
+				return A * cos(theta * frequency + _Time * phase);
+			}
+			*/
 			
 			v2f vert (appdata v)
 			{
 				v2f o;
-				//float4 new_pos = DistanceField(v.vertex);
-				o.vertex = UnityObjectToClipPos(v.vertex);
+
+				float3 world_pos = mul(unity_ObjectToWorld ,v.vertex).xyz;
+				float displacement  = waveHeight(v.vertex.x,v.vertex.z);
+
+				float4 new_pos = v.vertex;
+				float t = displacement - 0.01;
+				if(t>0 && new_pos.y<0.03){
+					
+					new_pos.y+=t;
+				}
+				
+				
+				
+				o.vertex = UnityObjectToClipPos(new_pos);
 //				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 				o.uv = v.uv; // here we don't want the main texture to affect the uv
 
-				o.worldPos = mul(unity_ObjectToWorld ,v.vertex).xyz;
-				o.view = normalize(WorldSpaceViewDir(v.vertex));
+				//o.worldPos = world_pos;
+				o.worldPos = mul(unity_ObjectToWorld ,new_pos).xyz;
+				o.view = normalize(WorldSpaceViewDir(new_pos));
 				o.normal = normalize( mul( unity_ObjectToWorld ,  v.normal).xyz ) ;
 				o.tangentDir = normalize( mul( unity_ObjectToWorld , float4( v.tangent.xyz, 0) ).xyz );
 				o.bitangentDir = normalize( cross( o.normal , o.tangentDir) * v.tangent.w );
